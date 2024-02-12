@@ -14,3 +14,7 @@ config/name="ParkingTest2"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[navigation]
+
+3d/default_cell_size=0.1

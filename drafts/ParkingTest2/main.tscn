@@ -60,7 +60,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2821, 2.23567, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.86655, 2.36187, -3.38731)
 
 [node name="player" parent="." instance=ExtResource("2_l4aun")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.93617, 1.88928, 12.0336)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.93617, 1.88928, 12.5371)
 
 [node name="enemy" parent="." instance=ExtResource("3_jrk8f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.74217, 2.02056, -8.87113)
@@ -70,3 +70,6 @@ transform = Transform3D(1, 0, 0, 0, 0.573605, 0.819132, 0, -0.819132, 0.573605, 
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.775088, 0.631853, 0, -0.631853, 0.775088, 0.128951, 9.15893, 18.3949)
+
+[node name="dynamic-obstacle" parent="." instance=ExtResource("3_cefdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0222, 2.84259, 10.2983)

@@ -10,7 +10,13 @@ func set_movement_target(movement_target: Vector3):
 	navigation_agent.set_target_position(movement_target)
 
 func _physics_process(delta):
+	if not navigation_agent.is_target_reachable():
+		print("not reacahable")
+		return
+	if navigation_agent.is_target_reached():
+		print("reached")
 	if navigation_agent.is_navigation_finished():
+		print("finished")
 		return
 
 	var next_path_position: Vector3 = navigation_agent.get_next_path_position()
