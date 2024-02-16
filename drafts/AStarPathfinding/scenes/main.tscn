@@ -1,0 +1,60 @@
+[gd_scene load_steps=10 format=3 uid="uid://n24iv2x0c5cf"]
+
+[ext_resource type="PackedScene" uid="uid://3cjpdjrbnwp2" path="res://scenes/player.tscn" id="1_thb37"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_u7siu"]
+[ext_resource type="Script" path="res://scripts/AStar.gd" id="2_5iec6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1u23v"]
+albedo_color = Color(0.305882, 0.466667, 0.247059, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i5oo0"]
+material = SubResource("StandardMaterial3D_1u23v")
+size = Vector3(20, 1, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_euv18"]
+size = Vector3(20, 1, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hygdv"]
+albedo_color = Color(0.360784, 0.705882, 0.52549, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fxpwi"]
+material = SubResource("StandardMaterial3D_hygdv")
+size = Vector3(15, 1, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_85ean"]
+size = Vector3(15, 1, 12)
+
+[node name="main" type="Node3D"]
+script = ExtResource("1_u7siu")
+
+[node name="Floor1" type="StaticBody3D" parent="." groups=["traversable"]]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor1"]
+mesh = SubResource("BoxMesh_i5oo0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor1"]
+shape = SubResource("BoxShape3D_euv18")
+
+[node name="Floor2" type="StaticBody3D" parent="." groups=["traversable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.448, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor2"]
+mesh = SubResource("BoxMesh_fxpwi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor2"]
+shape = SubResource("BoxShape3D_85ean")
+
+[node name="player" parent="." instance=ExtResource("1_thb37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8896, 0.500004, -0.40974)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.775275, 0.631623, 0, -0.631623, 0.775275, 4.97503, 21.2664, 23.7586)
+shadow_enabled = true
+
+[node name="AStar" type="Node3D" parent="."]
+script = ExtResource("2_5iec6")
+should_draw_cubes = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.737808, 0.675011, 0, -0.675011, 0.737808, 3.98921, 9.60347, 15.5391)
+current = true
