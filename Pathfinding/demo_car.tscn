@@ -1,0 +1,107 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxf6lh7jved27"]
+
+[ext_resource type="Script" path="res://demo_car.gd" id="1_qoy73"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gh02o"]
+size = Vector3(1.5, 0.5, 2.15)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sudmo"]
+points = PackedVector3Array(0.720383, -0.25, -1.02381, 0.768651, 0.278968, 1.09206, -0.766913, 0.278968, 1.09206, 0.768651, 0.278968, -1.09206, -0.766913, 0.278968, -1.09206, -0.718927, -0.25, 1.02381, 0.720383, -0.25, 1.02381, -0.718927, -0.25, -1.02381, 0.75, -0.0273195, 1.06554, 0.75, 0.00595236, -1.06554, 0.75, -0.0273195, -0.665855)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v1ydn"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xu0vj"]
+material = SubResource("StandardMaterial3D_v1ydn")
+top_radius = 0.4
+bottom_radius = 0.4
+height = 0.2
+radial_segments = 12
+
+[node name="car" type="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.11323, 1.95055)
+gravity_scale = 2.0
+script = ExtResource("1_qoy73")
+
+[node name="body" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0429564, 0.0916958, 0.310866)
+mesh = SubResource("BoxMesh_gh02o")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0429564, 0.0916958, 0.310866)
+shape = SubResource("ConvexPolygonShape3D_sudmo")
+
+[node name="wheel_front_left" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.890844, -0.208455, 0.871371)
+use_as_steering = true
+wheel_roll_influence = 0.01
+wheel_radius = 0.4
+wheel_rest_length = 0.2
+wheel_friction_slip = 1.1
+suspension_travel = 0.15
+suspension_stiffness = 100.0
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="wheel_front_left"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xu0vj")
+
+[node name="wheel_front_right" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.976956, -0.208265, 0.871866)
+use_as_steering = true
+wheel_roll_influence = 0.01
+wheel_radius = 0.4
+wheel_rest_length = 0.2
+wheel_friction_slip = 1.1
+suspension_travel = 0.15
+suspension_stiffness = 100.0
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="wheel_front_right"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xu0vj")
+
+[node name="wheel_back_left" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.890844, -0.208455, -0.559023)
+use_as_traction = true
+wheel_roll_influence = 0.01
+wheel_radius = 0.4
+wheel_rest_length = 0.2
+wheel_friction_slip = 1.4
+suspension_stiffness = 100.0
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="wheel_back_left"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xu0vj")
+
+[node name="wheel_back_right" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.976956, -0.208265, -0.558529)
+use_as_traction = true
+wheel_roll_influence = 0.01
+wheel_radius = 0.4
+wheel_rest_length = 0.2
+wheel_friction_slip = 1.4
+suspension_stiffness = 100.0
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="wheel_back_right"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xu0vj")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0639055, 0.0280159)
+
+[node name="CameraPivot" type="Node3D" parent="."]
+top_level = true
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(-1, 8.88178e-16, 8.74228e-08, 1.15244e-08, 0.991273, 0.131824, -8.66598e-08, 0.131824, -0.991273, 0, 1.14225, -3.54496)
+
+[node name="ReverseCamera" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.918929, 0.394423, 0, -0.394423, 0.918929, 0, 1.14225, 2.47269)
+current = true

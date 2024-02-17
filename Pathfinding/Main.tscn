@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://m1n3cgvx1ejs"]
+
+[ext_resource type="Texture2D" uid="uid://e6eu8ys8gdit" path="res://icon.svg" id="1_pcjna"]
+[ext_resource type="PackedScene" uid="uid://bxf6lh7jved27" path="res://demo_car.tscn" id="2_pf6yq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7djw4"]
+albedo_texture = ExtResource("1_pcjna")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_d8ooj"]
+material = SubResource("StandardMaterial3D_7djw4")
+size = Vector3(50, 1, 50)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_hs0tm"]
+data = PackedVector3Array(-25, 0.5, 25, 25, 0.5, 25, -25, -0.5, 25, 25, 0.5, 25, 25, -0.5, 25, -25, -0.5, 25, 25, 0.5, -25, -25, 0.5, -25, 25, -0.5, -25, -25, 0.5, -25, -25, -0.5, -25, 25, -0.5, -25, 25, 0.5, 25, 25, 0.5, -25, 25, -0.5, 25, 25, 0.5, -25, 25, -0.5, -25, 25, -0.5, 25, -25, 0.5, -25, -25, 0.5, 25, -25, -0.5, -25, -25, 0.5, 25, -25, -0.5, 25, -25, -0.5, -25, 25, 0.5, 25, -25, 0.5, 25, 25, 0.5, -25, -25, 0.5, 25, -25, 0.5, -25, 25, 0.5, -25, -25, -0.5, 25, 25, -0.5, 25, -25, -0.5, -25, 25, -0.5, 25, 25, -0.5, -25, -25, -0.5, -25)
+
+[node name="main" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0152696, -0.901034, -0.00151014)
+mesh = SubResource("BoxMesh_d8ooj")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ground"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ground/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_hs0tm")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0686422, 0.997641, 0, -0.997641, 0.0686422, 0, 2.23308, 0)
+light_energy = 1.646
+shadow_enabled = true
+
+[node name="car" parent="." instance=ExtResource("2_pf6yq")]
