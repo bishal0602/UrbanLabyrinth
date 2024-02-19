@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bd86e7sysqapq"
+path="res://.godot/imported/building-steps-narrow-windows.obj-48c2f5d9427d5e25271d4e671656be10.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building-steps-narrow-windows.obj-48c2f5d9427d5e25271d4e671656be10.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/building-steps-narrow-windows.obj"
+dest_files=["res://.godot/imported/building-steps-narrow-windows.obj-48c2f5d9427d5e25271d4e671656be10.mesh", "res://.godot/imported/building-steps-narrow-windows.obj-48c2f5d9427d5e25271d4e671656be10.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ct0qs3v7okj0e"
+path="res://.godot/imported/building-edges-door.obj-3f111facfc025a39a3bb973ac6735158.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building-edges-door.obj-3f111facfc025a39a3bb973ac6735158.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/building-edges-door.obj"
+dest_files=["res://.godot/imported/building-edges-door.obj-3f111facfc025a39a3bb973ac6735158.mesh", "res://.godot/imported/building-edges-door.obj-3f111facfc025a39a3bb973ac6735158.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

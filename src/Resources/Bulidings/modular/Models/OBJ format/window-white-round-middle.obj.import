@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://524ryr05cf3w"
+path="res://.godot/imported/window-white-round-middle.obj-df168c74d0386d5650f7266e46bc4272.mesh"
+
+[deps]
+
+files=["res://.godot/imported/window-white-round-middle.obj-df168c74d0386d5650f7266e46bc4272.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/window-white-round-middle.obj"
+dest_files=["res://.godot/imported/window-white-round-middle.obj-df168c74d0386d5650f7266e46bc4272.mesh", "res://.godot/imported/window-white-round-middle.obj-df168c74d0386d5650f7266e46bc4272.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

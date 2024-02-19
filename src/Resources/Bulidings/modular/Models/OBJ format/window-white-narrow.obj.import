@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dnl36satk64dd"
+path="res://.godot/imported/window-white-narrow.obj-cfb3900ed7e37e922987a99fb09f887f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/window-white-narrow.obj-cfb3900ed7e37e922987a99fb09f887f.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/window-white-narrow.obj"
+dest_files=["res://.godot/imported/window-white-narrow.obj-cfb3900ed7e37e922987a99fb09f887f.mesh", "res://.godot/imported/window-white-narrow.obj-cfb3900ed7e37e922987a99fb09f887f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

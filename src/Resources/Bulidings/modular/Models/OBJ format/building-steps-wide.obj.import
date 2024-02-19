@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cma1pg7tav38g"
+path="res://.godot/imported/building-steps-wide.obj-4e78ad8140ec6b54c878655b32f109b9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building-steps-wide.obj-4e78ad8140ec6b54c878655b32f109b9.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/building-steps-wide.obj"
+dest_files=["res://.godot/imported/building-steps-wide.obj-4e78ad8140ec6b54c878655b32f109b9.mesh", "res://.godot/imported/building-steps-wide.obj-4e78ad8140ec6b54c878655b32f109b9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

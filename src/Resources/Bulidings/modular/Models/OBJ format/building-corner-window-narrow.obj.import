@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://pm77rcejbayl"
+path="res://.godot/imported/building-corner-window-narrow.obj-620dcd0a248d59bc9a0ae6e6af2fdae6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building-corner-window-narrow.obj-620dcd0a248d59bc9a0ae6e6af2fdae6.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/building-corner-window-narrow.obj"
+dest_files=["res://.godot/imported/building-corner-window-narrow.obj-620dcd0a248d59bc9a0ae6e6af2fdae6.mesh", "res://.godot/imported/building-corner-window-narrow.obj-620dcd0a248d59bc9a0ae6e6af2fdae6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

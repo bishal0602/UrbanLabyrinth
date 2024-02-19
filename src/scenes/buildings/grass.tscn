@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyr75481x3a73"]
+
+[ext_resource type="PackedScene" uid="uid://bsdk0mpwtnreo" path="res://Resources/grasses/04/bush_04.FBX" id="1_ja5gi"]
+
+[node name="Root Scene" instance=ExtResource("1_ja5gi")]
