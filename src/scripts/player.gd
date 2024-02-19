@@ -17,13 +17,7 @@ func set_movement_target(movement_target: Vector3):
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
-		print("aaaaaaaaa")
 		velocity.y -= gravity * delta
-		move_and_slide()
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
 		move_and_slide()
 		
 	if navigation_agent.is_navigation_finished():
