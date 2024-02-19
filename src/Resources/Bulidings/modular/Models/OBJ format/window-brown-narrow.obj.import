@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cf3ha1lv3wh66"
+path="res://.godot/imported/window-brown-narrow.obj-161b797d2a40bbbad67b3670620ec2df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/window-brown-narrow.obj-161b797d2a40bbbad67b3670620ec2df.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/window-brown-narrow.obj"
+dest_files=["res://.godot/imported/window-brown-narrow.obj-161b797d2a40bbbad67b3670620ec2df.mesh", "res://.godot/imported/window-brown-narrow.obj-161b797d2a40bbbad67b3670620ec2df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

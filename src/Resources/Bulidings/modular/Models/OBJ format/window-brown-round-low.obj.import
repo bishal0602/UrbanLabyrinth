@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d1rw8kyjq0upq"
+path="res://.godot/imported/window-brown-round-low.obj-ceafcf7e0e8cb8b546172053bc8c5db7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/window-brown-round-low.obj-ceafcf7e0e8cb8b546172053bc8c5db7.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/window-brown-round-low.obj"
+dest_files=["res://.godot/imported/window-brown-round-low.obj-ceafcf7e0e8cb8b546172053bc8c5db7.mesh", "res://.godot/imported/window-brown-round-low.obj-ceafcf7e0e8cb8b546172053bc8c5db7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

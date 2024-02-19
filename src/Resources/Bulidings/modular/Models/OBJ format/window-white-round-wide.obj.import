@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctcdihtxgbpx1"
+path="res://.godot/imported/window-white-round-wide.obj-1b1f10b0608fa7802b1ceb2b5f4a30b2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/window-white-round-wide.obj-1b1f10b0608fa7802b1ceb2b5f4a30b2.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/window-white-round-wide.obj"
+dest_files=["res://.godot/imported/window-white-round-wide.obj-1b1f10b0608fa7802b1ceb2b5f4a30b2.mesh", "res://.godot/imported/window-white-round-wide.obj-1b1f10b0608fa7802b1ceb2b5f4a30b2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

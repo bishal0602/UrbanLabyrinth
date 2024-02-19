@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhrjrini03q6e"
+path="res://.godot/imported/door-white-glass.obj-2bc7bf0ea7e5350c8a81e03c4b7863c8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door-white-glass.obj-2bc7bf0ea7e5350c8a81e03c4b7863c8.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/door-white-glass.obj"
+dest_files=["res://.godot/imported/door-white-glass.obj-2bc7bf0ea7e5350c8a81e03c4b7863c8.mesh", "res://.godot/imported/door-white-glass.obj-2bc7bf0ea7e5350c8a81e03c4b7863c8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

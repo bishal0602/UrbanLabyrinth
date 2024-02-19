@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dyvbvlocvophr"
+path="res://.godot/imported/door-white.obj-cfb3806235ffa87f4a7198bac933d4ef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door-white.obj-cfb3806235ffa87f4a7198bac933d4ef.mesh"]
+
+source_file="res://Resources/Bulidings/modular/Models/OBJ format/door-white.obj"
+dest_files=["res://.godot/imported/door-white.obj-cfb3806235ffa87f4a7198bac933d4ef.mesh", "res://.godot/imported/door-white.obj-cfb3806235ffa87f4a7198bac933d4ef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
