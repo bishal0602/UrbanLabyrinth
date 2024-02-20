@@ -29,7 +29,10 @@ shadow_enabled = true
 [node name="Map" parent="." instance=ExtResource("2_mhcp3")]
 
 [node name="player" parent="." instance=ExtResource("3_t8c7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34327, 1.43785, -1.47842)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.416, 1.03816, -0.217997)
 
 [node name="target" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149, 0, -218)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.240551, 0.141281, -0.960299, -0.0343298, 0.989969, 0.137047, 0.970029, 0, 0.242989, -27.3438, 31.1499, -11.9216)

@@ -7,6 +7,8 @@ resource_name = "_defaultMat"
 albedo_color = Color(0.888142, 0.888142, 0.888142, 1)
 albedo_texture = ExtResource("1_ddug7")
 metallic = 1.0
+emission = Color(0.631373, 0.631373, 0.631373, 1)
+emission_energy_multiplier = 0.4
 uv1_scale = Vector3(3, 3, 3)
 uv1_triplanar = true
 
@@ -276,7 +278,7 @@ shadow_mesh = SubResource("ArrayMesh_fxvje")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4cy5y"]
 points = PackedVector3Array(-0.62, 1.62984, -0.600094, -0.62, 1.62984, 0.599973, -0.62, 1.68, -0.600094, -0.600094, 1.62984, -0.62, -0.600094, 0, -0.600094, -0.62, 1.68, 0.599973, -0.600094, 0, 0.599973, -0.600094, 0.299953, 0.62, -0.600094, 1.68, -0.62, -0.550086, 0.669961, -0.62, 0.599973, 0, -0.600094, -0.600094, 1.68, 0.62, 0.599973, 0, 0.599973, 0.599973, 0.299953, 0.62, 0.599973, 1.68, -0.62, 0.549965, 0.669961, -0.62, 0.599973, 1.62984, -0.62, 0.62, 1.62984, -0.600094, 0.599973, 1.68, 0.62, 0.62, 1.62984, 0.599973, 0.62, 1.68, -0.600094, 0.62, 1.68, 0.599973)
 
-[node name="Node3D" type="Node3D"]
+[node name="BctDepart" type="Node3D"]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 
 [node name="Electrical" type="StaticBody3D" parent="."]
