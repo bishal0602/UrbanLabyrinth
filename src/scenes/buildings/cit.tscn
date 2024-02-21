@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=3 uid="uid://ckgqshg4mov3r"]
+
+[ext_resource type="PackedScene" uid="uid://47otudtwetfk" path="res://models/modular_buildings/building-window-door-window.glb" id="1_do5x0"]
+[ext_resource type="PackedScene" uid="uid://bnh6556sdnpjr" path="res://models/modular_buildings/building-windows.glb" id="2_uk4k4"]
+[ext_resource type="PackedScene" uid="uid://b78evujtn51h" path="res://models/modular_buildings/building-window-balcony.glb" id="3_mtoej"]
+[ext_resource type="PackedScene" uid="uid://b2cesewl4mp5" path="res://models/modular_buildings/roof-flat-border-side.glb" id="4_6j425"]
+[ext_resource type="PackedScene" uid="uid://dtglxxyt8sr5o" path="res://models/modular_buildings/building-corner.glb" id="5_5e01y"]
+[ext_resource type="PackedScene" uid="uid://uwvj8bv3luk8" path="res://models/modular_buildings/building-block.glb" id="5_8ws2f"]
+
+[node name="cit" type="Node3D"]
+transform = Transform3D(7.5, 0, 0, 0, 7.5, 0, 0, 0, 7.5, 0, 0, 0)
+
+[node name="building-window-door-window2" parent="." instance=ExtResource("1_do5x0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.426643, 0, 0)
+
+[node name="building-windows3" parent="." instance=ExtResource("2_uk4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559492, 0, 0)
+
+[node name="building-windows5" parent="." instance=ExtResource("2_uk4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559492, 0.616457, 0)
+
+[node name="building-window-balcony2" parent="." instance=ExtResource("3_mtoej")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427045, 0.615631, 0.0742192)
+
+[node name="roof-flat-border-side2" parent="." instance=ExtResource("4_6j425")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427045, 1.14621, -0.00312564)
+
+[node name="roof-flat-border-side3" parent="." instance=ExtResource("4_6j425")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.561262, 1.14621, -0.00312564)
+
+[node name="roof-flat-border-side4" parent="." instance=ExtResource("4_6j425")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427045, 1.34815, -0.00312564)
+
+[node name="building-windows4" parent="." instance=ExtResource("2_uk4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559492, 0, 0)
+
+[node name="building-windows6" parent="." instance=ExtResource("2_uk4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559492, 0.616457, 0)
+
+[node name="roof-flat-border-side5" parent="." instance=ExtResource("4_6j425")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.561262, 1.14621, -0.00312564)
+
+[node name="building-windows7" parent="." instance=ExtResource("2_uk4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.53856, 0, 0)
+
+[node name="building-windows8" parent="." instance=ExtResource("2_uk4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.53856, 0.616457, 0)
+
+[node name="roof-flat-border-side6" parent="." instance=ExtResource("4_6j425")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.54033, 1.14621, -0.00312564)
+
+[node name="building-corner2" parent="." instance=ExtResource("5_5e01y")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.42778, 0, 0)
+
+[node name="building-windows9" parent="." instance=ExtResource("2_uk4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559492, 0, 0)
+
+[node name="building-windows10" parent="." instance=ExtResource("2_uk4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559492, 0.616457, 0)
+
+[node name="roof-flat-border-side7" parent="." instance=ExtResource("4_6j425")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.561262, 1.14621, -0.00312564)
+
+[node name="building-corner3" parent="." instance=ExtResource("5_5e01y")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.42778, 0.615528, 0)
+
+[node name="building-corner4" parent="." instance=ExtResource("5_5e01y")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.42778, 1.02312, 0)
+
+[node name="building-block2" parent="." instance=ExtResource("5_8ws2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42778, 0, -0.991965)
+
+[node name="building-block3" parent="." instance=ExtResource("5_8ws2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42778, 0.618582, -0.991965)
+
+[node name="building-block4" parent="." instance=ExtResource("5_8ws2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42778, 1.021, -0.991965)

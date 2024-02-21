@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b3mpvm8uvo4t5" path="res://textures/sky.png" id="1_0jnpv"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lqotp"]
 [ext_resource type="PackedScene" uid="uid://ckjpndfjfnvdd" path="res://scenes/map.tscn" id="2_mhcp3"]
-[ext_resource type="PackedScene" uid="uid://3cjpdjrbnwp2" path="res://scenes/player.tscn" id="3_t8c7r"]
+[ext_resource type="PackedScene" uid="uid://dbc36dpr1h1br" path="res://scenes/car.tscn" id="5_jua47"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_s3u5m"]
 panorama = ExtResource("1_0jnpv")
@@ -28,11 +28,11 @@ shadow_enabled = true
 
 [node name="Map" parent="." instance=ExtResource("2_mhcp3")]
 
-[node name="player" parent="." instance=ExtResource("3_t8c7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.416, 1.03816, -0.217997)
-
 [node name="target" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149, 0, -218)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.240551, 0.141281, -0.960299, -0.0343298, 0.989969, 0.137047, 0.970029, 0, 0.242989, -27.3438, 31.1499, -11.9216)
+
+[node name="car" parent="." instance=ExtResource("5_jua47")]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 3.58006, -22.1747)

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0hh848a4nm6d"]
+
+[ext_resource type="PackedScene" uid="uid://dbc36dpr1h1br" path="res://scenes/car.tscn" id="1_ldiqb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_aq1tx"]
+size = Vector3(50, 1, 50)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iwvvs"]
+points = PackedVector3Array(25.3919, 0.690476, 25.3919, -25.3919, -0.896825, -25.3919, -25.3919, 0.690476, -25.3919, 25.3919, -0.896825, -25.3919, -25.3919, -0.896825, 25.3919, -25.3919, 0.690476, 25.3919, 25.3919, 0.690476, -25.3919, 25.3919, -0.896825, 25.3919)
+
+[node name="StaticBody3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_aq1tx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_iwvvs")
+
+[node name="car" parent="." instance=ExtResource("1_ldiqb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.403, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.160743, 0.986996, 0, -0.986996, -0.160743, 0, 18.3913, 0)
