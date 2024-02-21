@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://xr7f1eqsrjxl"]
+[gd_scene load_steps=9 format=3 uid="uid://yqtf7mxp27rm"]
 
 [ext_resource type="PackedScene" uid="uid://dpw3f86ngxujv" path="res://models/modular_buildings/building-window-large.glb" id="1_oou4v"]
 [ext_resource type="PackedScene" uid="uid://b42b3whqa02yk" path="res://models/modular_buildings/building-window.glb" id="2_q3af8"]
