@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://ckjpndfjfnvdd"]
+[gd_scene load_steps=49 format=3 uid="uid://ckjpndfjfnvdd"]
 
 [ext_resource type="Texture2D" uid="uid://djktbfddbbjda" path="res://textures/road.png" id="1_eo547"]
 [ext_resource type="PackedScene" uid="uid://cxe7nrhd8ve6r" path="res://scenes/buildings/workshop.tscn" id="6_4t0br"]
@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://dod1mrisy0mf4" path="res://textures/PavingStones075_1K-JPG/PavingStones075_1K-JPG_Roughness.jpg" id="9_grrvu"]
 [ext_resource type="PackedScene" uid="uid://cls3pa45ev63t" path="res://scenes/buildings/Bctdepart.tscn" id="9_nwkq8"]
 [ext_resource type="PackedScene" uid="uid://yqtf7mxp27rm" path="res://scenes/buildings/ictc.tscn" id="10_6w5jd"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/cit.tscn" id="11_wbp6s"]
+[ext_resource type="PackedScene" uid="uid://dabho3nexw31e" path="res://scenes/buildings/white_house.tscn" id="12_7jf73"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nx36n"]
 albedo_texture = ExtResource("7_66fvq")
@@ -332,7 +334,7 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -50.7313, 0, -155.08)
 transform = Transform3D(-3.0598e-07, 0, -7, 0, 7, 0, 7, 0, -3.0598e-07, 49.8185, -7, -68.2304)
 
 [node name="library" parent="Buildings" instance=ExtResource("6_grgpy")]
-transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -47.7427, 0, -82.8467)
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -41.3334, 0, -70.246)
 
 [node name="Meshes" type="Node3D" parent="."]
 
@@ -609,3 +611,9 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -61.0002, 0, -126.434)
 [node name="detail_overhangWide" type="MeshInstance3D" parent="Accessories/Node3D"]
 mesh = SubResource("ArrayMesh_5uwoa")
 skeleton = NodePath("")
+
+[node name="cit" parent="." instance=ExtResource("11_wbp6s")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -40.0563, 0, -95.2267)
+
+[node name="White_house" parent="." instance=ExtResource("12_7jf73")]
+transform = Transform3D(-6, 0, -5.24537e-07, 0, 6, 0, 5.24537e-07, 0, -6, -148.797, -15.432, -83.7758)

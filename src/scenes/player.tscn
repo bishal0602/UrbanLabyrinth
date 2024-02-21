@@ -36,7 +36,6 @@ mesh = SubResource("SphereMesh_3w785")
 transform = Transform3D(1, 0, 0, 0, 0.897274, 0.441475, 0, -0.441475, 0.897274, 0, 2, 3)
 
 [node name="Camera3D" type="Camera3D" parent="camera_pivot"]
-current = true
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_postprocessing = 1
