@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b3mpvm8uvo4t5" path="res://textures/sky.png" id="1_0jnpv"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lqotp"]
 [ext_resource type="PackedScene" uid="uid://ckjpndfjfnvdd" path="res://scenes/map.tscn" id="2_mhcp3"]
-[ext_resource type="PackedScene" uid="uid://dbc36dpr1h1br" path="res://scenes/car.tscn" id="5_jua47"]
+[ext_resource type="PackedScene" uid="uid://dvtkdvmlillrx" path="res://scenes/car.tscn" id="5_jua47"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_s3u5m"]
 panorama = ExtResource("1_0jnpv")
