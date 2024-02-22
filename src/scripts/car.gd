@@ -1,5 +1,6 @@
 extends VehicleBody3D
 @onready var navigation_agent :NavigationAgent3D= $NavigationAgent3D
+var index := 0
 
 var path:PackedVector3Array;
 
@@ -14,6 +15,12 @@ func _physics_process(delta):
 		return
 		
 	# do stuff here
-	print(path[2])
-		
+	var target = path[index]
+	if position.distance_squared_to(target) <1:
+		if index < path.size():
+			index += 1
+	
+	var velocity := (target-global_position).normalized()*20
+	linear_velocity = linear_velocity.lerp(velocity, 0.3)
+			
 #

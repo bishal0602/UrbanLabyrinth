@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dabho3nexw31e"]
+[gd_scene load_steps=8 format=3 uid="uid://dabho3nexw31e"]
 
 [ext_resource type="Texture2D" uid="uid://cwa2tflujk3f4" path="res://Resources/the_white_house/textures/Material__26_baseColor.png" id="1_y8p2q"]
 
@@ -41,20 +41,36 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2un18")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_v57iq"]
-points = PackedVector3Array(11.8989, 10.1, 7.09954, 11.0997, 8.29965, 10.3998, 11.2992, 8.49969, 9.89988, 11.8989, 2.3, 7.09954, 11.8989, 10.1, 6.3, 0.7, 10.1, 7.09954, 6.49953, 9.69992, 9.89988, 9.0989, 7.39947, 11.6998, 8.99914, 7.29945, 11.7997, 11.0997, 5.09978, 10.3998, 11.2992, 4.89975, 9.89988, 11.8989, 2.3, 6.3, 7.89953, 2.69931, 10.3998, 8.09906, 2.49928, 9.89988, 0.7, 2.3, 7.09954, 0.7, 10.1, 6.3, 1.29969, 8.49969, 9.89988, 1.49922, 8.29965, 10.3998, 6.09937, 9.69992, 9.89988, 6.49953, 9.0998, 10.3998, 6.2989, 5.49986, 12, 8.99914, 6.09922, 11.7997, 3.59977, 7.29945, 11.7997, 0.7, 2.3, 6.3, 6.39977, 2.89935, 11.0995, 4.49984, 2.49928, 9.89988, 4.69937, 2.69931, 10.3998, 1.49922, 5.09978, 10.3998, 1.29969, 4.89975, 9.89988, 3.4989, 7.39947, 11.6998, 6.09937, 9.0998, 10.3998, 6.2989, 5.39984, 12, 6.19914, 5.49986, 12, 3.59977, 6.09922, 11.7997, 6.19914, 2.89935, 11.0995, 6.19914, 5.39984, 12)
+[sub_resource type="BoxShape3D" id="BoxShape3D_vmn4s"]
+size = Vector3(9.73608, 4.82837, 3.76929)
 
-[node name="White_house" type="StaticBody3D"]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.552668, -1.77786, -9.89435)
+[sub_resource type="BoxShape3D" id="BoxShape3D_tbp7j"]
+size = Vector3(3.56824, 4.82837, 3.11023)
 
-[node name="Sketchfab_model" type="Node3D" parent="."]
+[sub_resource type="BoxShape3D" id="BoxShape3D_45yve"]
+size = Vector3(3.56824, 4.82837, 1.56879)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="White_house" type="StaticBody3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, -14.2799, -78.4137)
+
+[node name="Sketchfab_model" type="Node3D" parent="White_house"]
 transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)
 
-[node name="Object_3" type="MeshInstance3D" parent="."]
+[node name="Object_3" type="MeshInstance3D" parent="White_house"]
 transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, -5.77776, -4.74443, 15.35)
 mesh = SubResource("ArrayMesh_cfqxe")
 skeleton = NodePath("")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, -5.77776, -4.74443, 15.35)
-shape = SubResource("ConvexPolygonShape3D_v57iq")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="White_house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.533569, 4.90076, 8.55436)
+shape = SubResource("BoxShape3D_vmn4s")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="White_house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.514954, 4.90076, 11.1583)
+shape = SubResource("BoxShape3D_tbp7j")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="White_house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.514954, 4.90076, 6.60344)
+shape = SubResource("BoxShape3D_45yve")

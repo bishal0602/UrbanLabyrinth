@@ -1411,7 +1411,7 @@ wheel_friction_slip = 1.1
 suspension_stiffness = 100.0
 
 [node name="back_left_mesh" type="MeshInstance3D" parent="back_left"]
-transform = Transform3D(1.5733e-06, 2.35995e-06, 26.3955, -26.3955, 0, 2.35995e-06, 0, -26.3955, 1.5733e-06, 0, 0, 0)
+transform = Transform3D(1.5733e-06, 1.9928e-06, 26.3955, -26.3955, -1.15378e-06, 1.5733e-06, 1.15378e-06, -26.3955, 1.9928e-06, 0, 0, 0)
 mesh = SubResource("ArrayMesh_qar4c")
 skeleton = NodePath("")
 
@@ -1426,7 +1426,7 @@ wheel_friction_slip = 1.1
 suspension_stiffness = 100.0
 
 [node name="back_right_mesh" type="MeshInstance3D" parent="back_right"]
-transform = Transform3D(1.5733e-06, 2.35995e-06, -26.3955, -26.3955, 0, -2.35995e-06, 0, 26.3955, 1.5733e-06, 0, 0, 0)
+transform = Transform3D(1.5733e-06, 1.9928e-06, -26.3955, -26.3955, -1.15378e-06, -1.5733e-06, -1.15378e-06, 26.3955, 1.9928e-06, 0, 0, 0)
 mesh = SubResource("ArrayMesh_3g7a2")
 skeleton = NodePath("")
 
