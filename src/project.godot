@@ -19,6 +19,7 @@ config/windows_native_icon="res://Resources/icon.ico"
 [autoload]
 
 Utils="*res://scripts/utils.gd"
+Algorithms="*res://scripts/algorithms.gd"
 
 [display]
 
