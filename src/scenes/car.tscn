@@ -1364,66 +1364,38 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_10m6r")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xvtvw"]
-size = Vector3(4, 2, 9)
+size = Vector3(2.36584, 1.72217, 5.7597)
 
-[node name="car" type="VehicleBody3D"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-gravity_scale = 4.0
-engine_force = 100.0
+[node name="car" type="CharacterBody3D"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 0)
 script = ExtResource("1_d2hp5")
 
-[node name="front_left" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06849, -0.883205, 3.48061)
-use_as_steering = true
-wheel_roll_influence = 0.01
-wheel_radius = 0.7
-wheel_rest_length = 0.2
-wheel_friction_slip = 1.4
-suspension_stiffness = 100.0
+[node name="front_left" type="Node3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.14605, -0.481062, 1.70665)
 
 [node name="front_left_mesh" type="MeshInstance3D" parent="front_left"]
 transform = Transform3D(1.5733e-06, 1.99281e-06, 26.3955, -26.3955, -1.15379e-06, 1.5733e-06, 1.15379e-06, -26.3955, 1.99281e-06, 0, 0, 0)
 mesh = SubResource("ArrayMesh_bosj5")
 skeleton = NodePath("")
 
-[node name="front_right" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05398, -0.883205, 3.48061)
-use_as_steering = true
-wheel_roll_influence = 0.01
-wheel_radius = 0.7
-wheel_rest_length = 0.2
-wheel_friction_slip = 1.4
-suspension_stiffness = 100.0
+[node name="front_right" type="Node3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.15144, -0.481, 1.746)
 
 [node name="front_right_mesh" type="MeshInstance3D" parent="front_right"]
 transform = Transform3D(1.5733e-06, 2.35995e-06, -26.3955, -26.3955, 0, -2.35995e-06, 0, 26.3955, 1.5733e-06, 0, 0, 0)
 mesh = SubResource("ArrayMesh_u0x5j")
 skeleton = NodePath("")
 
-[node name="back_left" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06849, -0.883205, -3.18565)
-engine_force = 100.0
-use_as_traction = true
-wheel_roll_influence = 0.01
-wheel_radius = 0.7
-wheel_rest_length = 0.2
-wheel_friction_slip = 1.1
-suspension_stiffness = 100.0
+[node name="back_left" type="Node3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.146, -0.481, -1.625)
 
 [node name="back_left_mesh" type="MeshInstance3D" parent="back_left"]
 transform = Transform3D(1.5733e-06, 1.9928e-06, 26.3955, -26.3955, -1.15378e-06, 1.5733e-06, 1.15378e-06, -26.3955, 1.9928e-06, 0, 0, 0)
 mesh = SubResource("ArrayMesh_qar4c")
 skeleton = NodePath("")
 
-[node name="back_right" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05398, -0.883205, -3.18565)
-engine_force = 100.0
-use_as_traction = true
-wheel_roll_influence = 0.01
-wheel_radius = 0.7
-wheel_rest_length = 0.2
-wheel_friction_slip = 1.1
-suspension_stiffness = 100.0
+[node name="back_right" type="Node3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.151, -0.481, -1.625)
 
 [node name="back_right_mesh" type="MeshInstance3D" parent="back_right"]
 transform = Transform3D(1.5733e-06, 1.9928e-06, -26.3955, -26.3955, -1.15378e-06, -1.5733e-06, -1.15378e-06, 26.3955, 1.9928e-06, 0, 0, 0)
@@ -1431,6 +1403,7 @@ mesh = SubResource("ArrayMesh_3g7a2")
 skeleton = NodePath("")
 
 [node name="Node" type="Node3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="Plane" type="MeshInstance3D" parent="Node"]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 7.17122)
@@ -1477,10 +1450,11 @@ transform = Transform3D(-1, 1.33227e-15, -8.74228e-08, -1.24902e-08, 0.989741, 0
 current = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0210648, -0.142989)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00311281, -0.0524215, -0.0346821)
 shape = SubResource("BoxShape3D_xvtvw")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_postprocessing = 1
 debug_enabled = true
 debug_use_custom = true
 debug_path_custom_color = Color(0.0941176, 0.466667, 0.470588, 1)

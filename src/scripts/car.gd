@@ -1,4 +1,4 @@
-extends VehicleBody3D
+extends CharacterBody3D
 @onready var navigation_agent :NavigationAgent3D= $NavigationAgent3D
 var index := 0
 
@@ -20,7 +20,9 @@ func _physics_process(delta):
 		if index < path.size():
 			index += 1
 	
-	var velocity := (target-global_position).normalized()*20
-	linear_velocity = linear_velocity.lerp(velocity, 0.3)
+	var new_velocity := (target-global_position).normalized()*20
+	velocity = velocity.lerp(new_velocity, 0.3)
+	rotation.y = lerp_angle(rotation.y, atan2(velocity.x, velocity.z), 0.08)
+	move_and_slide()
 			
 #
