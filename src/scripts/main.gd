@@ -1,7 +1,12 @@
 extends Node3D
 
-@onready var target: Node3D = $target
 @onready var car = $car
+
+# mocking target changes
+@onready var target1: Node3D = $target1
+@onready var target2: Node3D = $target2
+@onready var targets:=[target1, target2]
+@onready var index = 0
 
 
 func _ready():
@@ -10,11 +15,14 @@ func _ready():
 
 func setup():
 		# Wait for the first physics frame so the NavigationServer can sync.
-		#player.set_movement_target(target.global_position)
-		car.set_movement_target(target.global_position)
 		await get_tree().physics_frame
 		set_physics_process(true)
 
-#func _physics_process(delta):
-		##get_tree().call_group("enemies", "set_movement_target", player.global_transform.origin)
-		#player.set_movement_target(target.global_position)
+func _input(event):
+# Just mocking user input for testing
+	if event.is_action_pressed("ui_accept"):
+		index = wrapi(index+1,0,targets.size())
+		car.navigation_agent.set_target_position(targets[index].global_position)
+		Events.parking_location_selected.emit()
+			
+
