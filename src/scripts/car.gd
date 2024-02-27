@@ -45,6 +45,7 @@ func _on_parking_location_selected():
 	
 	path.clear()
 	boundaries.clear()
+	index =0
 	path = navigation_agent.get_current_navigation_path()
 	boundaries = Algorithms.generate_boundary_planes(path)
 	
