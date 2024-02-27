@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=3 uid="uid://cls3pa45ev63t"]
 
-[ext_resource type="Texture2D" uid="uid://c07e05o0fula1" path="res://brick-wall-mosaic-tile-floor-red-brick-creative-background-shading-b902c57e545b489f723034089ba7b6ac.png" id="1_ddug7"]
+[ext_resource type="Texture2D" uid="uid://nc7i2lhrn6lj" path="res://textures/red-brick.png" id="1_2ky8x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3o568"]
 resource_name = "_defaultMat"
 albedo_color = Color(0.888142, 0.888142, 0.888142, 1)
-albedo_texture = ExtResource("1_ddug7")
+albedo_texture = ExtResource("1_2ky8x")
 metallic = 1.0
 emission = Color(0.631373, 0.631373, 0.631373, 1)
 emission_energy_multiplier = 0.4
