@@ -25,4 +25,3 @@ func _input(event):
 		car.navigation_agent.set_target_position(targets[index].global_position)
 		Events.parking_location_selected.emit()
 			
-
