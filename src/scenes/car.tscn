@@ -1363,8 +1363,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_10m6r")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_xvtvw"]
-size = Vector3(2.36584, 1.72217, 5.7597)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hkahy"]
+radius = 0.883922
+height = 6.08298
 
 [node name="car" type="CharacterBody3D"]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 0)
@@ -1450,8 +1451,8 @@ transform = Transform3D(-1, 1.33227e-15, -8.74228e-08, -1.24902e-08, 0.989741, 0
 current = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00311281, -0.0524215, -0.0346821)
-shape = SubResource("BoxShape3D_xvtvw")
+transform = Transform3D(1, -1.50996e-07, 1.50996e-07, 1.50996e-07, -4.37114e-08, -1, 1.50996e-07, 1, -4.37114e-08, -0.00311281, -0.0524215, -0.0346821)
+shape = SubResource("CapsuleShape3D_hkahy")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_postprocessing = 1
