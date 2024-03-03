@@ -32,7 +32,16 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.7287, -3.42661, -37.0869)
 
 [node name="target2" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.274, -3.4266, -221.963)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.323, 0, -175.007)
+
+[node name="target3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.154, 0, -203.288)
+
+[node name="target4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.346, 0, -46.124)
+
+[node name="target5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.611, 0, -161.811)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-3.45598e-08, -0.612286, 0.790636, -2.67639e-08, 0.790636, 0.612286, -1, 0, -4.37114e-08, 22.9513, 31.1499, -100.935)

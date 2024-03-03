@@ -34,7 +34,7 @@ func _physics_process(delta):
 			index += 1
 			return
 
-	var new_velocity := (target_point-global_position).normalized()*20.0
+	var new_velocity := (target_point-global_position).normalized()*50.0
 	velocity = velocity.lerp(new_velocity, 0.3)
 	rotation.y = lerp_angle(rotation.y, atan2(velocity.x, velocity.z), 0.08)
 	move_and_slide()
