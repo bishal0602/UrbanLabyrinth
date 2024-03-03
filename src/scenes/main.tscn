@@ -28,14 +28,14 @@ shadow_enabled = true
 
 [node name="Map" parent="." instance=ExtResource("2_mhcp3")]
 
-[node name="target1" type="Node3D" parent="."]
+[node name="target3" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.7287, -3.42661, -37.0869)
 
 [node name="target2" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.323, 0, -175.007)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.323, 0.5, -175.007)
 
-[node name="target3" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.154, 0, -203.288)
+[node name="target1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8865, -1.99894, -203.288)
 
 [node name="target4" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.346, 0, -46.124)
