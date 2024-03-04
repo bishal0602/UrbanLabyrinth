@@ -24,8 +24,8 @@ func _ready():
 	
 	Events.parking_location_selected.connect(_on_parking_location_selected)
 
-func set_movement_target(movement_target: Vector3):
-	navigation_agent.set_target_position(movement_target)
+#func set_movement_target(movement_target: Vector3):
+	#navigation_agent.set_target_position(movement_target)
 	
 func _physics_process(delta):
 	if not is_on_floor():
@@ -52,7 +52,8 @@ func _physics_process(delta):
 	rotation.y = lerp_angle(rotation.y, atan2(velocity.x, velocity.z), 0.08)
 	move_and_slide()
 	
-func _on_parking_location_selected():
+func _on_parking_location_selected(position: Vector3):
+	navigation_agent.target_position = position
 	if navigation_agent.is_navigation_finished():
 		return
 	

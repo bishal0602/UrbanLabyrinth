@@ -1,7 +1,5 @@
 extends Node3D
 
-@onready var car = $car
-
 # mocking target changes
 @onready var target1: Node3D = $target1
 @onready var target2: Node3D = $target2
@@ -24,9 +22,14 @@ func setup():
 
 func _input(event):
 # Just mocking user input for testing
+	if(event.is_action_pressed("park")):
+		Events.ui_set_parking.emit()
+		
+	if(event.is_action_pressed("escape")):
+		Events.ui_set_main.emit()
+		
 	if event.is_action_pressed("ui_accept"):
-		car.navigation_agent.set_target_position(targets[index].global_position)
 		index = wrapi(index+1,0,targets.size())
 		print(index)
-		Events.parking_location_selected.emit()
-			
+		Events.parking_location_selected.emit(targets[index].global_position)
+	
