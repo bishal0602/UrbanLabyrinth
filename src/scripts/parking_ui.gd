@@ -1,7 +1,7 @@
 extends Control
 
 func _ready():
-	visible = false
+	visible = true
 	Events.ui_set_parking.connect(_on_ui_set_parking)
 	Events.ui_set_main.connect(_on_ui_set_main)
 	
@@ -10,13 +10,20 @@ func _on_ui_set_parking():
 
 func _on_ui_set_main():
 	visible = false
-	
-func _input(event):
-	if not visible: return
-	
-	#TODO: Add Parking Selection
 
 
-func _on_love_garden_parking_mouse_entered():
-	var container:SubViewportContainer = $GridContainer/LoveGardenParking
-	#container.
+func _on__ictc_parking_pressed():
+	Events.parking_location_selected.emit(Vector3(33.7,-3.4,-37.1))
+	Events.ui_set_main.emit()
+
+func _on_robotics_parking_pressed():
+	Events.parking_location_selected.emit(Vector3(-72.346, 0, -46.124))
+	Events.ui_set_main.emit()
+	
+func _on_bct_parking_pressed():
+	Events.parking_location_selected.emit(Vector3(13.6,0,-161.8))
+	Events.ui_set_main.emit()
+
+func on_lovegarden_parking_pressed():
+	Events.parking_location_selected.emit(Vector3(33.7,-3.4,-37.1))
+	Events.ui_set_main.emit()
