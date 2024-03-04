@@ -1453,9 +1453,3 @@ current = true
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, -1.50996e-07, 1.50996e-07, 1.50996e-07, -4.37114e-08, -1, 1.50996e-07, 1, -4.37114e-08, -0.00311281, -0.0524215, -0.0346821)
 shape = SubResource("CapsuleShape3D_hkahy")
-
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
-path_postprocessing = 1
-debug_enabled = true
-debug_use_custom = true
-debug_path_custom_color = Color(0.0941176, 0.466667, 0.470588, 1)

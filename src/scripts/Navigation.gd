@@ -1,5 +1,7 @@
 extends Node3D
 #
+#@export var root_node:Node3D = self
+#
 #var navigation_mesh: NavigationMesh
 #var source_geometry : NavigationMeshSourceGeometryData3D
 #var callback_parsing : Callable
@@ -8,7 +10,12 @@ extends Node3D
 #
 #func _ready() -> void:
 	#navigation_mesh = NavigationMesh.new()
-	#navigation_mesh.agent_radius = 0.5
+	#navigation_mesh.agent_radius = 1.0
+	#navigation_mesh.agent_height = 0.8
+	#navigation_mesh.agent_max_slope = 60.0
+	#navigation_mesh.agent_max_climb = 0.5
+	#
+	#
 	#source_geometry = NavigationMeshSourceGeometryData3D.new()
 	#callback_parsing = on_parsing_done
 	#callback_baking = on_baking_done
@@ -25,7 +32,6 @@ extends Node3D
 #
 #func parse_source_geometry() -> void:
 	#source_geometry.clear()
-	#var root_node: Node3D = self
 #
 	## Parse the geometry from all mesh child nodes of the root node by default.
 	#NavigationServer3D.parse_source_geometry_data(
