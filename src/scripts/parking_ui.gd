@@ -1,7 +1,7 @@
 extends Control
 
 func _ready():
-	visible = true
+	visible = false
 	Events.ui_set_parking.connect(_on_ui_set_parking)
 	Events.ui_set_main.connect(_on_ui_set_main)
 	

@@ -8,15 +8,15 @@
 bg_color = Color(0.439216, 0.615686, 0.803922, 0.419608)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjgtg"]
-bg_color = Color(0.384314, 0.67451, 0.509804, 0.419608)
+bg_color = Color(0.92549, 0.415686, 0.466667, 0.419608)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bh1vw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wbg1p"]
-bg_color = Color(0.764706, 0.521569, 0.572549, 0.419608)
+bg_color = Color(0.372549, 0.686275, 0.356863, 0.419608)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_833wo"]
-bg_color = Color(0.686275, 0.588235, 0.372549, 0.419608)
+bg_color = Color(0.631373, 0.521569, 0.909804, 0.419608)
 
 [node name="ParkingControl" type="Control"]
 layout_mode = 3
