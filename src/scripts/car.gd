@@ -1,8 +1,11 @@
 extends CharacterBody3D
 @onready var navigation_agent :NavigationAgent3D
+
+var push_force = 30.0
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
 var index := 0
 var boundaries: Array[Algorithms.Boundary]
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var path:PackedVector3Array;
 
 var destination_reached:bool = false;
@@ -24,9 +27,6 @@ func _ready():
 	
 	Events.parking_location_selected.connect(_on_parking_location_selected)
 
-#func set_movement_target(movement_target: Vector3):
-	#navigation_agent.set_target_position(movement_target)
-	
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity * delta
@@ -35,6 +35,7 @@ func _physics_process(delta):
 	if destination_reached or not new_target_selected: return
 	
 	if global_position.distance_squared_to(boundaries[-1].point)<0.5:
+		Events.parking_location_reached.emit()
 		destination_reached = true
 		new_target_selected = false
 		return
@@ -51,6 +52,10 @@ func _physics_process(delta):
 	velocity = velocity.lerp(new_velocity, 0.3)
 	rotation.y = lerp_angle(rotation.y, atan2(velocity.x, velocity.z), 0.08)
 	move_and_slide()
+	for i in get_slide_collision_count():
+		var c = get_slide_collision(i)
+		if c.get_collider() is RigidBody3D:
+			c.get_collider().apply_central_impulse(-c.get_normal() * push_force)
 	
 func _on_parking_location_selected(position: Vector3):
 	navigation_agent.target_position = position

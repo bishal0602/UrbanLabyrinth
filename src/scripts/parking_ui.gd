@@ -25,5 +25,5 @@ func _on_bct_parking_pressed():
 	Events.ui_set_main.emit()
 
 func on_lovegarden_parking_pressed():
-	Events.parking_location_selected.emit(Vector3(33.7,-3.4,-37.1))
+	Events.parking_location_selected.emit(Vector3(-191.5,0, -169))
 	Events.ui_set_main.emit()

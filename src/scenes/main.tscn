@@ -1,10 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://osngynr67w4b"]
+[gd_scene load_steps=12 format=3 uid="uid://osngynr67w4b"]
 
 [ext_resource type="Texture2D" uid="uid://b3mpvm8uvo4t5" path="res://textures/sky.png" id="1_0jnpv"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lqotp"]
 [ext_resource type="PackedScene" uid="uid://ckjpndfjfnvdd" path="res://scenes/map.tscn" id="2_mhcp3"]
+[ext_resource type="Texture2D" uid="uid://n7lohmibvlso" path="res://Resources/press_p.png" id="5_8x412"]
 [ext_resource type="PackedScene" uid="uid://bts4y6dkpv1fh" path="res://scenes/parking_ui.tscn" id="5_certe"]
 [ext_resource type="PackedScene" uid="uid://dvtkdvmlillrx" path="res://scenes/car.tscn" id="5_jua47"]
+[ext_resource type="Script" path="res://scripts/ui_container.gd" id="5_sclak"]
+[ext_resource type="PackedScene" uid="uid://d04x5xknvxucl" path="res://scenes/people/injured_man.tscn" id="6_23ptn"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_s3u5m"]
 panorama = ExtResource("1_0jnpv")
@@ -35,6 +38,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.7499, -3.42661, -37.0869)
 [node name="target2" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.323, 0.5, -175.007)
 
+[node name="target6" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -191.969, 0.5, -169.454)
+
 [node name="target1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8865, -1.99894, -203.288)
 
@@ -48,9 +54,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.611, 0, -161.811)
 transform = Transform3D(-3.45598e-08, -0.612286, 0.790636, -2.67639e-08, 0.790636, 0.612286, -1, 0, -4.37114e-08, 22.9513, 31.1499, -100.935)
 
 [node name="car" parent="." instance=ExtResource("5_jua47")]
-transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 21.9551, -14.1747)
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -0.87674, 21.9551, -18.5584)
 
-[node name="Container" type="AspectRatioContainer" parent="."]
+[node name="UIContainer" type="AspectRatioContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -58,6 +64,14 @@ grow_horizontal = 2
 grow_vertical = 2
 ratio = 1.78
 stretch_mode = 1
+script = ExtResource("5_sclak")
 
-[node name="ParkingControl" parent="Container" instance=ExtResource("5_certe")]
+[node name="PressPToolTip" type="TextureRect" parent="UIContainer"]
 layout_mode = 2
+texture = ExtResource("5_8x412")
+
+[node name="ParkingControl" parent="UIContainer" instance=ExtResource("5_certe")]
+layout_mode = 2
+
+[node name="InjuredMan" parent="." instance=ExtResource("6_23ptn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.802834, 0, -93.8635)
