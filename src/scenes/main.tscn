@@ -1,10 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://osngynr67w4b"]
+[gd_scene load_steps=11 format=3 uid="uid://osngynr67w4b"]
 
 [ext_resource type="Texture2D" uid="uid://b3mpvm8uvo4t5" path="res://textures/sky.png" id="1_0jnpv"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lqotp"]
 [ext_resource type="PackedScene" uid="uid://ckjpndfjfnvdd" path="res://scenes/map.tscn" id="2_mhcp3"]
 [ext_resource type="PackedScene" uid="uid://bts4y6dkpv1fh" path="res://scenes/parking_ui.tscn" id="5_certe"]
 [ext_resource type="PackedScene" uid="uid://dvtkdvmlillrx" path="res://scenes/car.tscn" id="5_jua47"]
+[ext_resource type="PackedScene" uid="uid://c7b52stmesryv" path="res://scenes/fountain.tscn" id="6_ifgkm"]
+[ext_resource type="PackedScene" uid="uid://ce0kdhg56qo43" path="res://scenes/light_pole.tscn" id="7_jk4ig"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_s3u5m"]
 panorama = ExtResource("1_0jnpv")
@@ -61,3 +63,18 @@ stretch_mode = 1
 
 [node name="ParkingControl" parent="Container" instance=ExtResource("5_certe")]
 layout_mode = 2
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("6_ifgkm")]
+transform = Transform3D(0.025, 0, 0, 0, 0.025, 0, 0, 0, 0.025, -150.875, 0, -189.94)
+
+[node name="lightPostModern" parent="." instance=ExtResource("7_jk4ig")]
+transform = Transform3D(-7.43094e-07, 0, 17, 0, 17, 0, -17, 0, -7.43094e-07, -6.54586, 0, -19.7774)
+
+[node name="lightPostModern2" parent="." instance=ExtResource("7_jk4ig")]
+transform = Transform3D(-7.43094e-07, 0, 17, 0, 17, 0, -17, 0, -7.43094e-07, -7.03644, 0, -87.9965)
+
+[node name="lightPostModern3" parent="." instance=ExtResource("7_jk4ig")]
+transform = Transform3D(-7.43094e-07, 0, -17, 0, 17, 0, 17, 0, -7.43094e-07, 30.6436, 0, -150.071)
+
+[node name="lightPostModern4" parent="." instance=ExtResource("7_jk4ig")]
+transform = Transform3D(-17, 0, -1.48619e-06, 0, 17, 0, 1.48619e-06, 0, -17, -48.5669, 0, -111.956)
