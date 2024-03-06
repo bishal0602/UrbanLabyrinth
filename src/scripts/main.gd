@@ -10,5 +10,8 @@ func setup():
 		set_physics_process(true)
 
 func _input(event):
+	if(event.is_action_pressed("park")):
+		Events.ui_set_parking.emit()
 	if(event.is_action_pressed("escape")):
 		Events.ui_set_main.emit()
+	
