@@ -50,16 +50,13 @@ grow_vertical = 2
 columns = 2
 
 [node name="LoveGardenParking" type="SubViewportContainer" parent="ColorRect/GridContainer"]
-custom_minimum_size = Vector2(640, 360)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-stretch = true
-stretch_shrink = 2
 
 [node name="SubViewport" type="SubViewport" parent="ColorRect/GridContainer/LoveGardenParking"]
 handle_input_locally = false
-size = Vector2i(320, 180)
+size = Vector2i(640, 360)
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="ColorRect/GridContainer/LoveGardenParking/SubViewport"]
@@ -78,12 +75,10 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_qtfck")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-stretch = true
-stretch_shrink = 2
 
 [node name="SubViewport" type="SubViewport" parent="ColorRect/GridContainer/ICTCParking"]
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(640, 360)
 render_target_update_mode = 4
 
 [node name="Button" type="Button" parent="ColorRect/GridContainer/ICTCParking/SubViewport"]
@@ -103,12 +98,10 @@ transform = Transform3D(0.935931, 0.151963, -0.317713, 0, 0.902119, 0.431488, 0.
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-stretch = true
-stretch_shrink = 2
 
 [node name="SubViewport" type="SubViewport" parent="ColorRect/GridContainer/RoboticsParking"]
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(640, 360)
 render_target_update_mode = 4
 
 [node name="Button" type="Button" parent="ColorRect/GridContainer/RoboticsParking/SubViewport"]
@@ -128,7 +121,6 @@ custom_minimum_size = Vector2(640, 360)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="ColorRect/GridContainer/BctParking"]
 handle_input_locally = false

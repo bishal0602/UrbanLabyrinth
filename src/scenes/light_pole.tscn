@@ -1,8 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://ce0kdhg56qo43"]
+[gd_scene load_steps=7 format=3 uid="uid://bcxsomu1ojo14"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_og6fo"]
+albedo_color = Color(1, 1, 0.247059, 1)
+emission_enabled = true
+emission = Color(0.886275, 0.752941, 0, 1)
+emission_energy_multiplier = 9.62
+
+[sub_resource type="SphereMesh" id="SphereMesh_s0qbm"]
+material = SubResource("StandardMaterial3D_og6fo")
+radius = 0.02
+height = 0.02
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hn0a0"]
 resource_name = "_defaultMat"
-albedo_color = Color(1, 1, 1, 1)
 emission_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kk580"]
@@ -66,6 +76,11 @@ shadow_mesh = SubResource("ArrayMesh_3reum")
 
 [node name="lightPostModern" type="Node3D"]
 transform = Transform3D(17, 0, 0, 0, 17, 0, 0, 0, 17, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.751064, 0.131123)
+mesh = SubResource("SphereMesh_s0qbm")
+skeleton = NodePath("../lightPostModern(Clone)")
 
 [node name="lightPostModern(Clone)" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_q8ckw")
