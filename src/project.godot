@@ -14,10 +14,10 @@ config/name="UrbanLabyrinth"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
-boot_splash/image="res://Resources/start-screen.png"
+boot_splash/image="res://Resources/splash.png"
 config/icon="res://Resources/icon.svg"
 config/windows_native_icon="res://Resources/icon.ico"
-boot_splash/minimum_display_time=30
+boot_splash/minimum_display_time=1000
 boot_splash/size/mode=0
 
 [autoload]
@@ -35,6 +35,10 @@ window/size/viewport_height=720
 [dotnet]
 
 project/assembly_name="UrbanLabyrinth"
+
+[editor]
+
+movie_writer/movie_file="F:/GodotProjs/Proj_Videos/file.avi"
 
 [editor_plugins]
 

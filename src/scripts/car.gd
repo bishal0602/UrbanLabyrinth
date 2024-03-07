@@ -82,3 +82,6 @@ func _on_parking_location_selected(position: Vector3):
 	
 func set_camera_current():
 	camera_3d.current = true
+
+func reset_camera_current():
+	camera_3d.current = false
