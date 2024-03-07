@@ -9,7 +9,6 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i3iee"]
 resource_name = "Material_2"
 cull_mode = 2
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("1_f68ey")
 roughness = 0.892971
 
@@ -50,7 +49,6 @@ shadow_mesh = SubResource("ArrayMesh_4jc47")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xe80m"]
 resource_name = "Material_3"
 cull_mode = 2
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("2_y307s")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_oefss"]
@@ -89,7 +87,6 @@ shadow_mesh = SubResource("ArrayMesh_oefss")
 resource_name = "Material_23"
 transparency = 4
 cull_mode = 2
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("3_xbwgj")
 roughness = 0.892971
 
@@ -131,7 +128,6 @@ shadow_mesh = SubResource("ArrayMesh_oxblk")
 resource_name = "Material_49"
 transparency = 4
 cull_mode = 2
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("4_7v2he")
 roughness = 0.892971
 
@@ -411,7 +407,6 @@ shadow_mesh = SubResource("ArrayMesh_kpgnm")
 resource_name = "Material_50"
 transparency = 4
 cull_mode = 2
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("5_dxqqf")
 roughness = 0.892971
 
