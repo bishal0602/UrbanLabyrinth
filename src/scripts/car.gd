@@ -11,6 +11,8 @@ var path:PackedVector3Array;
 var destination_reached:bool = false;
 var new_target_selected:bool = false;
 
+@onready var camera_3d = $Camera3D
+
 func _ready():
 	navigation_agent = NavigationAgent3D.new()
 	add_child(navigation_agent)
@@ -76,3 +78,6 @@ func _on_parking_location_selected(position: Vector3):
 	destination_reached = false
 	
 	return
+	
+func set_camera_current():
+	camera_3d.current = true
