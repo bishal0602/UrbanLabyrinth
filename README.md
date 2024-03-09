@@ -15,7 +15,7 @@ The primary goals of the project are to create an accurate 3D representation of 
 ### Detailed 3D simulation of the Pulchowk Campus
 
 <p align="center">
-  <video src="assets/campus-view.mp4" controls="controls" alt="Pulchowk Campus View" width="720"></video>
+  <video src="https://github.com/bishal0602/UrbanLabyrinth/assets/106395844/645fef9f-9ffa-4bd8-b51b-3402dafd03c6" controls="controls" alt="Pulchowk Campus View" width="720"></video>
 </p>
 
 ### Designated parking locations within the campus
