@@ -21,13 +21,13 @@ The primary goals of the project are to create an accurate 3D representation of 
 ### Designated parking locations within the campus
 
 <p align="center">
-  <img src="assets/parking-ui.png" alt="ParkingUI" width="720" />
+  <img src="https://github.com/bishal0602/UrbanLabyrinth/assets/106395844/e6773a90-1892-42fc-9df4-0d8c4500047b" alt="ParkingUI" width="720" />
 </p>
 
 ### Navigation using A* pathfinding algorithm
 
 <p align="center">
-  <img src="assets/gameplay.png" alt="Gameplay" width="720" />
+  <img src="https://github.com/bishal0602/UrbanLabyrinth/assets/106395844/cd9a0030-b3f5-49d3-9884-b4856bf4fa9d" alt="Gameplay" width="720" />
 </p>
 
 
