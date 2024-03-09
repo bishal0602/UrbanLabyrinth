@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://b3mpvm8uvo4t5" path="res://textures/sky.png" id="1_0jnpv"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lqotp"]
 [ext_resource type="PackedScene" uid="uid://ckjpndfjfnvdd" path="res://scenes/map.tscn" id="2_mhcp3"]
-[ext_resource type="Texture2D" uid="uid://n7lohmibvlso" path="res://Resources/press_p.png" id="5_8x412"]
+[ext_resource type="Texture2D" uid="uid://n7lohmibvlso" path="res://Resources/ui-assets/press_p.png" id="5_8x412"]
 [ext_resource type="PackedScene" uid="uid://bts4y6dkpv1fh" path="res://scenes/parking_ui.tscn" id="5_certe"]
 [ext_resource type="PackedScene" uid="uid://dvtkdvmlillrx" path="res://scenes/car.tscn" id="5_jua47"]
 [ext_resource type="Script" path="res://scripts/ui_container.gd" id="5_sclak"]
 [ext_resource type="PackedScene" uid="uid://d04x5xknvxucl" path="res://scenes/people/injured_man.tscn" id="6_23ptn"]
-[ext_resource type="Texture2D" uid="uid://cb8ctpui3r52d" path="res://Resources/start-screen1.png" id="8_des55"]
+[ext_resource type="Texture2D" uid="uid://cb8ctpui3r52d" path="res://Resources/ui-assets/overlay.png" id="8_des55"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_s3u5m"]
 panorama = ExtResource("1_0jnpv")

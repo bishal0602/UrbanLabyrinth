@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7ysy02h05e1w"
-path="res://.godot/imported/start-screen.png-89c29b119e2b108086a64a3419a341e6.ctex"
+uid="uid://44vohf765gh5"
+path="res://.godot/imported/urban_labyrinth_256.png-fc5075873b6009f2693ab4f343625932.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/start-screen.png"
-dest_files=["res://.godot/imported/start-screen.png-89c29b119e2b108086a64a3419a341e6.ctex"]
+source_file="res://Resources/icons/urban_labyrinth_256.png"
+dest_files=["res://.godot/imported/urban_labyrinth_256.png-fc5075873b6009f2693ab4f343625932.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c1q72s0dfaqfj" path="res://Resources/Cars/old cars/rustycar/textures/Material_294_baseColor.png" id="1_yb1yc"]
 [ext_resource type="Texture2D" uid="uid://b3p0lubkqxi5n" path="res://Resources/Cars/old cars/rustycar/textures/Material_294_metallicRoughness.png" id="2_6qpsc"]
-[ext_resource type="Texture2D" uid="uid://dsubesp0tcc4e" path="res://Resources/Material_294_normal.png" id="3_r4fje"]
+[ext_resource type="Texture2D" uid="uid://dsubesp0tcc4e" path="res://Resources/Cars/old cars/rustycar/textures/Material_294_normal.png" id="3_r4fje"]
 [ext_resource type="Texture2D" uid="uid://dk3hp4mpatyxn" path="res://Resources/Cars/old cars/rustycar/textures/Material_295_baseColor.png" id="4_x7p31"]
 [ext_resource type="Texture2D" uid="uid://v2g0s3c3pedi" path="res://Resources/Cars/old cars/rustycar/textures/Material_316_baseColor.png" id="5_s5ti3"]
 

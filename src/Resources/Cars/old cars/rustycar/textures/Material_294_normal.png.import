@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsubesp0tcc4e"
-path.s3tc="res://.godot/imported/Material_294_normal.png-8297cc4fbf39603dc9ca0ca13dad5932.s3tc.ctex"
+path.s3tc="res://.godot/imported/Material_294_normal.png-2bae9ed9c21a48c59c4043b24d99f036.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Resources/Material_294_normal.png"
-dest_files=["res://.godot/imported/Material_294_normal.png-8297cc4fbf39603dc9ca0ca13dad5932.s3tc.ctex"]
+source_file="res://Resources/Cars/old cars/rustycar/textures/Material_294_normal.png"
+dest_files=["res://.godot/imported/Material_294_normal.png-2bae9ed9c21a48c59c4043b24d99f036.s3tc.ctex"]
 
 [params]
 
