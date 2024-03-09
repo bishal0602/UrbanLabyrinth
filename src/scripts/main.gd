@@ -21,8 +21,11 @@ func _input(event):
 		panning_camera.current = false
 		car.set_camera_current()
 		Events.ui_set_parking.emit()
-	if(event.is_action_pressed("escape")):
+	if(event.is_action_pressed("go_back")):
+		panning_camera.current = false		
 		Events.ui_set_main.emit()
+	if(event.is_action_pressed("exit")):
+		get_tree().quit(0)
 	
 func _process(delta):
 	if(Input.is_key_pressed(KEY_H)):

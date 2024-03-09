@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://osngynr67w4b"]
+[gd_scene load_steps=13 format=3 uid="uid://osngynr67w4b"]
 
 [ext_resource type="Texture2D" uid="uid://b3mpvm8uvo4t5" path="res://textures/sky.png" id="1_0jnpv"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lqotp"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://bts4y6dkpv1fh" path="res://scenes/parking_ui.tscn" id="5_certe"]
 [ext_resource type="PackedScene" uid="uid://dvtkdvmlillrx" path="res://scenes/car.tscn" id="5_jua47"]
 [ext_resource type="Script" path="res://scripts/ui_container.gd" id="5_sclak"]
-[ext_resource type="PackedScene" uid="uid://d04x5xknvxucl" path="res://scenes/people/injured_man.tscn" id="6_23ptn"]
 [ext_resource type="Texture2D" uid="uid://cb8ctpui3r52d" path="res://Resources/ui-assets/overlay.png" id="8_des55"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_s3u5m"]
@@ -82,9 +81,6 @@ layout_mode = 2
 [node name="StartScreen" type="TextureRect" parent="UIContainer"]
 layout_mode = 2
 texture = ExtResource("8_des55")
-
-[node name="InjuredMan" parent="." instance=ExtResource("6_23ptn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.802834, 0, -93.8635)
 
 [node name="camera_path" type="Path3D" parent="."]
 transform = Transform3D(0.999945, -4.56973e-10, -0.0104543, 4.56973e-10, 1, -2.38915e-12, 0.0104543, -2.38915e-12, 0.999945, -20.2259, 20, -32.1086)
