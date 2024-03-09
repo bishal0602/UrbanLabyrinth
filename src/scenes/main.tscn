@@ -78,7 +78,7 @@ texture = ExtResource("5_8x412")
 [node name="ParkingControl" parent="UIContainer" instance=ExtResource("5_certe")]
 layout_mode = 2
 
-[node name="StartScreen" type="TextureRect" parent="UIContainer"]
+[node name="Overlay" type="TextureRect" parent="UIContainer"]
 layout_mode = 2
 texture = ExtResource("8_des55")
 
