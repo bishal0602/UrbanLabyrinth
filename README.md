@@ -5,27 +5,25 @@
 </p>
 
 ## Overview
-Urban Labyrinth is a 3D simulation of the Pulchowk Campus, where a virtual vehicle navigates to choosen parking location using the A* pathfinding algorithm.
-
-The primary goals of the project are to create an accurate 3D representation of the campus and implement the A* algorithm for optimal path planning to demonstrate its practical application in a real-world scenario.
+Urban Labyrinth offers a detailed 3D simulation of the Pulchowk Campus, designed to facilate navigation to designated parking locations within the campus using the A* pathfinding algorithm. The project's core focus lies in delivering a realistic representation of the campus environment while leveraging pathfinding algorithms for practical navigation scenarios.
 
 
-## Features
+## Key Features
 
 ### Detailed 3D simulation of the Pulchowk Campus
-
+Experience a vivid portrayal of Pulchowk Campus in detailed 3D simulation.
 <p align="center">
   <video src="https://github.com/bishal0602/UrbanLabyrinth/assets/106395844/645fef9f-9ffa-4bd8-b51b-3402dafd03c6" controls="controls" alt="Pulchowk Campus View" width="720"></video>
 </p>
 
-### Choose between parking locations within the campus
-
+### Parking Location Selection
+Choose from various parking locations located within the campus.
 <p align="center">
   <img src="https://github.com/bishal0602/UrbanLabyrinth/assets/106395844/e6773a90-1892-42fc-9df4-0d8c4500047b" alt="ParkingUI" width="720" />
 </p>
 
-### Navigation using A* pathfinding algorithm
-
+### A* Pathfinding Algorithm
+Efficiently navigate through the campus using the A* pathfinding algorithm..
 <p align="center">
   <img src="https://github.com/bishal0602/UrbanLabyrinth/assets/106395844/cd9a0030-b3f5-49d3-9884-b4856bf4fa9d" alt="Gameplay" width="720" />
 </p>
@@ -33,25 +31,26 @@ The primary goals of the project are to create an accurate 3D representation of 
 
 ## Usage
 
-### For Windows users 
-Simply download the exe file from the [releases](https://github.com/bishal0602/UrbanLabyrinth/releases/tag/v1.0.0) section.
+### For Windows Users
+Download the executable file from the [releases](https://github.com/bishal0602/UrbanLabyrinth/releases/tag/v1.0.0) section.
 
 <a href="https://github.com/bishal0602/UrbanLabyrinth/releases/download/v1.0.0/UrbanLabyrinth.exe" download>
-  <button style="padding: 10px 10px; background-color: #74eb32; color: #001a44; border: none; cursor: pointer; border-radius: 5px; font-size:16px;font-weight:600">UrbanLabyrinth.exe</button>
+  <img src="https://github.com/bishal0602/UrbanLabyrinth/assets/106395844/4c7c5a1e-879c-40aa-a31c-403467e5871b" alt="Download UrbanLabyrinth.exe" width="80" />
 </a>
 
 ### Building from Source
+For other operating systems or if you prefer building from source:
 
-If you use other OS or prefer to build the project from source, follow these instructions:
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/bishal0602/UrbanLabyrinth.git
+   ```
 
-1. **Clone the repository:**
-```
-git clone https://github.com/bishal0602/UrbanLabyrinth.git
-```
+2. **Open in Godot Engine:**
+   Open the project in [Godot Engine](https://godotengine.org/).
 
-2. **Open the project in [Godot Engine](https://godotengine.org/).** 
-
-3. **Build and run the project using Godot's built-in tools.**
+3. **Build and Run:**
+   Use Godot's built-in tools to build and run the project.
 
 ## Contributors
 - [@bhuwantechnical](https://github.com/bhuwantechnical)
