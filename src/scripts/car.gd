@@ -2,7 +2,9 @@ extends CharacterBody3D
 @onready var navigation_agent :NavigationAgent3D
 
 var SPEED := 25.0
+var slow_speed := 10.0
 var push_force = 30.0
+var rotation_speed : float = 1.0
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 var index := 0
@@ -11,6 +13,7 @@ var path:PackedVector3Array;
 
 var destination_reached:bool = false;
 var new_target_selected:bool = false;
+
 
 @onready var camera_3d = $Camera3D
 
@@ -27,8 +30,34 @@ func _ready():
 	navigation_agent.debug_path_custom_color = Color.LIGHT_SEA_GREEN
 	navigation_agent.debug_path_custom_point_size = 4
 
-	
+
 	Events.parking_location_selected.connect(_on_parking_location_selected)
+
+func _process(delta: float) -> void:
+	var input_vector = Vector3.ZERO
+	
+	if Input.is_action_pressed("ui_up"):
+		input_vector.z += 1
+	if Input.is_action_pressed("ui_down"):
+		input_vector.z -= 1
+	if Input.is_action_pressed("ui_left"):
+		rotation.y += rotation_speed * delta
+	if Input.is_action_pressed("ui_right"):
+		rotation.y -= rotation_speed * delta
+	if input_vector.length() > 0:
+		input_vector = input_vector.normalized()
+		
+	var speed = slow_speed
+	if Input.is_action_pressed("shift"):
+		speed = SPEED
+		
+	# Apply rotation
+	input_vector = input_vector.rotated(Vector3.UP, rotation.y)
+	
+	velocity = lerp(velocity, input_vector * speed, 0.3)
+	if not is_on_floor():
+		velocity.y -= gravity * delta*5
+	move_and_slide()
 
 func _physics_process(delta):
 	if not is_on_floor():
