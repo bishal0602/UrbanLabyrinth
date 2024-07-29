@@ -21,6 +21,6 @@ func on_parking_location_reached():
 	press_p_tool_tip.visible = true
 	press_xn_p_tool_tip.visible = false
 	
-func on_parking_location_selected():
+func on_parking_location_selected(_pos: Vector3):
 	press_p_tool_tip.visible = false
 	press_xn_p_tool_tip.visible = false

@@ -39,70 +39,70 @@ func _process(delta):
 
 func _on_area_3d_body_entered(body):
 	if(body.is_in_group("player")):
-		var  str :AudioStream = load("res://Resources/music/track_1.mp3")
-		if(str != audio_stream):
-			_change_stream(str)
+		var  new_stream :AudioStream = load("res://Resources/music/track_1.mp3")
+		if(new_stream != audio_stream):
+			_change_stream(new_stream)
 	pass # Replace with function body.
 
 
 func _on_music_2_body_entered(body):
 	if(body.is_in_group("player")):
-		var  str :AudioStream = load("res://Resources/music/track_2.mp3")
-		if(str != audio_stream):
-			_change_stream(str)
+		var  new_stream :AudioStream = load("res://Resources/music/track_2.mp3")
+		if(new_stream != audio_stream):
+			_change_stream(new_stream)
 		
 	pass # Replace with function body.
 
 
-func _change_stream(str : AudioStream): 
-	if(str != audio_stream):
+func _change_stream(new_stream : AudioStream): 
+	if(new_stream != audio_stream):
 			if(audio_player.playing):
 				audio_player.stop()
-			audio_player.stream = str
-			audio_stream = str
+			audio_player.stream = new_stream
+			audio_stream = new_stream
 			audio_player.play()
 
 
 func _on_music_3_body_entered(body):
 	if(body.is_in_group("player")):
-		var  str :AudioStream = load("res://Resources/music/track_3.mp3")
-		if(str != audio_stream):
-			_change_stream(str)
+		var  new_stream :AudioStream = load("res://Resources/music/track_3.mp3")
+		if(new_stream != audio_stream):
+			_change_stream(new_stream)
 	
 	pass # Replace with function body.
 
 
 func _on_music_4_body_entered(body):
 	if(body.is_in_group("player")):
-		var  str :AudioStream = load("res://Resources/music/track_4.mp3")
-		if(str != audio_stream):
-			_change_stream(str)
+		var  new_stream :AudioStream = load("res://Resources/music/track_4.mp3")
+		if(new_stream != audio_stream):
+			_change_stream(new_stream)
 	
 	pass # Replace with function body.
 
 
 func _on_music_5_body_entered(body):
 	if(body.is_in_group("player")):
-		var  str :AudioStream = load("res://Resources/music/track_5.mp3")
-		if(str != audio_stream):
-			_change_stream(str)
+		var  new_stream :AudioStream = load("res://Resources/music/track_5.mp3")
+		if(new_stream != audio_stream):
+			_change_stream(new_stream)
 	
 	pass # Replace with function body.
 
 
 func _on_music_6_body_entered(body):
 	if(body.is_in_group("player")):
-		var  str :AudioStream = load("res://Resources/music/track_6.mp3")
-		if(str != audio_stream):
-			_change_stream(str)
+		var  new_stream :AudioStream = load("res://Resources/music/track_6.mp3")
+		if(new_stream != audio_stream):
+			_change_stream(new_stream)
 	
 	pass # Replace with function body.
 
 
 func _on_music_7_body_entered(body):
 	if(body.is_in_group("player")):
-		var  str :AudioStream = load("res://Resources/music/track_7.mp3")
-		if(str != audio_stream):
-			_change_stream(str)
+		var  new_stream :AudioStream = load("res://Resources/music/track_7.mp3")
+		if(new_stream != audio_stream):
+			_change_stream(new_stream)
 	
 	pass # Replace with function body.
