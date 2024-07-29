@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n7lohmibvlso"
-path="res://.godot/imported/press_p.png-6d37580c608d477741a49906c78256f7.ctex"
+uid="uid://c3a3htkitf5rn"
+path="res://.godot/imported/drive_park_tooltip.png-4799101984aa5415a1f9d5864924454c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/ui-assets/press_p.png"
-dest_files=["res://.godot/imported/press_p.png-6d37580c608d477741a49906c78256f7.ctex"]
+source_file="res://Resources/ui-assets/drive_park_tooltip.png"
+dest_files=["res://.godot/imported/drive_park_tooltip.png-4799101984aa5415a1f9d5864924454c.ctex"]
 
 [params]
 

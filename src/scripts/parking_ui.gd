@@ -4,11 +4,15 @@ func _ready():
 	visible = false
 	Events.ui_set_parking.connect(_on_ui_set_parking)
 	Events.ui_set_main.connect(_on_ui_set_main)
+	Events.ui_set_drive.connect(_on_ui_set_drive)
 	
 func _on_ui_set_parking():
 	visible = true
 
 func _on_ui_set_main():
+	visible = false
+	
+func _on_ui_set_drive():
 	visible = false
 
 
