@@ -4,8 +4,10 @@ extends CharacterBody3D
 var SPEED := 25.0
 var slow_speed := 10.0
 var push_force = 30.0
-var rotation_speed : float = 0.80
+var rotation_speed : float = 1.0
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
+
 
 var index := 0
 var boundaries: Array[Algorithms.Boundary]
@@ -17,7 +19,9 @@ var new_target_selected:bool = false;
 @onready var tires :Array[Node3D] = [$back_right, $back_left, $front_right,$front_left]
 @onready var camera_3d = $Camera3D
 
+
 func _ready():
+
 	navigation_agent = NavigationAgent3D.new()
 	add_child(navigation_agent)
 	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://osngynr67w4b"]
+[gd_scene load_steps=16 format=3 uid="uid://osngynr67w4b"]
 
 [ext_resource type="Texture2D" uid="uid://b3mpvm8uvo4t5" path="res://textures/sky.png" id="1_0jnpv"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lqotp"]
@@ -27,6 +27,15 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 13
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1gg4o"]
+size = Vector3(83.7114, 1, 93.5161)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y6nfs"]
+size = Vector3(35, 1, 35)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cc7al"]
+size = Vector3(20, 1, 20)
 
 [node name="main" type="Node3D"]
 script = ExtResource("1_lqotp")
@@ -91,3 +100,59 @@ transform = Transform3D(-0.996594, 0, -0.082432, 0, 1, 0, 0.082432, 0, -0.996594
 
 [node name="panning_camera" type="Camera3D" parent="camera_path/PathFollow3D"]
 current = true
+
+[node name="audio_player" type="AudioStreamPlayer3D" parent="."]
+
+[node name="Music1" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.3509, -6.59109, -49.6787)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Music1"]
+shape = SubResource("BoxShape3D_1gg4o")
+
+[node name="Music2" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.7885, 2, -164.067)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Music2"]
+shape = SubResource("BoxShape3D_1gg4o")
+
+[node name="Music3" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -109.384, 2, -58.4068)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Music3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5386, -1.8842, -18.8363)
+shape = SubResource("BoxShape3D_y6nfs")
+
+[node name="Music4" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.715, 0.749777, -176.157)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Music4"]
+shape = SubResource("BoxShape3D_y6nfs")
+
+[node name="Music5" type="Area3D" parent="."]
+transform = Transform3D(0.999801, 0, 0.0199303, 0, 1, 0, -0.0199303, 0, 0.999801, -141.31, 0.749777, -196.338)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Music5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.52258, 0, -3.77625)
+shape = SubResource("BoxShape3D_y6nfs")
+
+[node name="Music6" type="Area3D" parent="."]
+transform = Transform3D(0.999801, 0, 0.0199303, 0, 1, 0, -0.0199303, 0, 0.999801, -63.3944, 0.749777, -138.458)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Music6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.52258, 0, -3.77625)
+shape = SubResource("BoxShape3D_cc7al")
+
+[node name="Music7" type="Area3D" parent="."]
+transform = Transform3D(0.999801, 0, 0.0199303, 0, 1, 0, -0.0199303, 0, 0.999801, -6.71508, 0.749777, -20.9888)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Music7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.52258, 0, -3.77625)
+shape = SubResource("BoxShape3D_cc7al")
+
+[connection signal="body_entered" from="Music1" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Music2" to="." method="_on_music_2_body_entered"]
+[connection signal="body_entered" from="Music3" to="." method="_on_music_3_body_entered"]
+[connection signal="body_entered" from="Music4" to="." method="_on_music_4_body_entered"]
+[connection signal="body_entered" from="Music5" to="." method="_on_music_5_body_entered"]
+[connection signal="body_entered" from="Music6" to="." method="_on_music_6_body_entered"]
+[connection signal="body_entered" from="Music7" to="." method="_on_music_7_body_entered"]
