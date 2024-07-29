@@ -23,7 +23,7 @@ func _input(event):
 		Events.ui_set_parking.emit()
 	if(event.is_action_pressed("go_back")):
 		panning_camera.current = false		
-		Events.ui_set_main.emit()
+		Events.ui_set_drive.emit()
 	if(event.is_action_pressed("exit")):
 		get_tree().quit(0)
 	
