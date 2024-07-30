@@ -102,6 +102,7 @@ transform = Transform3D(-0.996594, 0, -0.082432, 0, 1, 0, 0.082432, 0, -0.996594
 current = true
 
 [node name="audio_player" type="AudioStreamPlayer3D" parent="."]
+attenuation_model = 3
 
 [node name="Music1" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.3509, -6.59109, -49.6787)
