@@ -29,6 +29,17 @@ Efficiently navigate through the campus using the A* pathfinding algorithm..
 </p>
 
 
+## Controls
+
+### Drive Mode
+- Press `X` to enter Drive Mode.
+- Use arrow keys to drive and turn.
+- Hold `Shift` for a speed boost.
+
+### Parking Mode
+- Press `P` to enter Parking Mode.
+- Select the location you want to park in.
+
 ## Usage
 
 ### For Windows Users
