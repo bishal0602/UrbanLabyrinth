@@ -43,9 +43,9 @@ Efficiently navigate through the campus using the A* pathfinding algorithm..
 ## Usage
 
 ### For Windows Users
-Download the executable file from the [releases](https://github.com/bishal0602/UrbanLabyrinth/releases/tag/v1.0.0) section.
+Download the executable file from the [releases](https://github.com/bishal0602/UrbanLabyrinth/releases/tag/v2.0.0) section.
 
-<a href="https://github.com/bishal0602/UrbanLabyrinth/releases/download/v1.0.0/UrbanLabyrinth.exe" download>
+<a href="https://github.com/bishal0602/UrbanLabyrinth/releases/download/v2.0.0/UrbanLabyrinth.exe" download>
   <img src="https://github.com/bishal0602/UrbanLabyrinth/assets/106395844/4c7c5a1e-879c-40aa-a31c-403467e5871b" alt="Download UrbanLabyrinth.exe" width="80" />
 </a>
 
